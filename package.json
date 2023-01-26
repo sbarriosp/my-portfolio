@@ -2,7 +2,7 @@
   "name": "react-portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://sbarriosp.github.io/React-Portfolio/build",
+  "homepage": "https://sbarriosp.github.io/React-Portfolio/",
   "dependencies": {
     "@emailjs/browser": "^3.10.0",
     "@fortawesome/free-brands-svg-icons": "^6.2.1",
@@ -26,7 +26,7 @@
   },
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -b master -d build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
