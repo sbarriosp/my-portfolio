@@ -5,7 +5,7 @@ import AnimatedLetters from '../AnimatedLetters';
 import Loader from 'react-loaders';
 import LogoTitle from '../../assets/images/logo-s.jpg';
 import {Animated} from 'react-animated-css';
-import { v4 as uuidv4} from 'uuid';
+
 
 function MyComponent() {
   return (
@@ -22,7 +22,7 @@ function MyComponent() {
 const Home = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
     const [borderColor, setBorderColor] = useState("border-color-1");
-    const uniqueId = uuidv4();
+    
     const nameArray = ['S', 'e', 'b', 'a', 's', 't', 'i', 'a', 'n', ' ', 'B', 'a', 'r', 'r', 'i', 'o', 's']
     const jobArray = ['W', 'e', 'b', ' ', 'D', 'e', 'v', 'e', 'l', 'o', 'p', 'e', 'r', '.']
 
