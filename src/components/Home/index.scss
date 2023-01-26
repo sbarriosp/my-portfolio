@@ -1,0 +1,168 @@
+.home-page {
+  .text-zone{
+    position: absolute;
+    left: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40%;
+    max-height: 90%;
+  }
+  h1 {
+    color: #fff;
+    font-size: 53px;
+    margin: 0;
+    font-family: 'Coolvetica';
+    font-weight: 400;
+
+    &::before {
+    
+      font-size: 18px;
+      position: absolute;
+      margin-top: -40px;
+      left: 15px;
+      opacity: 0.6;
+    }
+
+    &::after {
+
+      color: #00ffff;
+      font-size: 18px;
+      position: absolute;
+      margin-top: 18px;
+      margin-left: 20px;
+      animation: fadeIn 1s 1.7s backwards;
+      opacity: 0.6; 
+    }
+           
+  }
+
+  h2 {
+    color: #fff;
+    margin-top: 60px;
+    font-weight: 400;
+    font-size: 11px;
+    font-family: sans-serif;
+    letter-spacing: 3px;
+    animation: fadeIn 1s 1.8s backwards;
+  }
+
+  .flat-button {
+    color: #00ffff;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 4px;
+    font-family: sans-serif;
+    text-decoration: none;
+    padding: 10px 18px;
+    border: 1px solid #00ffff;
+    border-radius: 4px;
+    margin-top: 25px;
+    float:left;
+    animation: fadeIn 1s 1.8s backwards;
+    white-space: nowrap;
+  }
+
+  .flat-button:hover { /*Copy this and modify colors to contact and about me buttons*/
+    transform: translateY(-3px);
+    background: #00ffff;
+    color: #000;
+  }
+
+         
+  @keyframes spin {
+    0% {
+      border-color: #00ffff;
+    }
+    50% {
+      border-color: #000fff;
+    }
+    100% {
+      border-color: #00ffff;
+    }
+  }
+      
+  .logo {
+    position: absolute;
+    top: 50%;
+    right: 150px;
+    transform: translateY(-50%);
+  }
+      
+  .logo img {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  .border-animation {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    bottom: -6px;
+    left: -10px;
+    border-radius: 50%;
+    border: 10px solid #00ffff;
+    animation: spin 2s linear infinite;
+  }    
+  
+  .border-color-1 {
+    border-color: #00ffff;
+  }
+
+  .border-color-2 {
+    border-color: #000fff;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .tags,
+  .home-page h1::before,
+  .home-page h1::after {
+    display: none;
+  }
+
+  .home-page {
+    .text-zone {
+      position: initial;
+      width: 100%;
+      transform: none;
+      padding: 10px;
+      box-sizing: border-box;
+
+      h1 {
+        font-size: 35px;
+        line-height: 1.5;
+        font-weight: 500;
+      }
+    }
+
+    .flat-button {
+      float: none;
+      display: block;
+      margin: 20px auto 0 auto;
+      width: 125px;
+    }
+
+    .logo {
+      position: relative; 
+      width: 150px;
+      height: 150px;
+      top: 50%;
+      right: 0;
+      left: 0;
+      margin: auto;
+      margin-top: 100px;
+      transform: translateY(-50%);
+      box-sizing: border-box;
+    }
+
+    .logo img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+  }
+}
