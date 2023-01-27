@@ -12,12 +12,9 @@ root.render(
     <BrowserRouter>
       <App />
     </BrowserRouter>
-    ReactDOM.render(
     <HashRouter>
       <App />
     </HashRouter>,
-    document.getElementById('root')
-  );
   </React.StrictMode>
 );
 
