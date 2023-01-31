@@ -8,10 +8,10 @@
         },
 
         {
-            "cover": "/portfolio/WebCalculator/Calculatorimg.png",
-            "title": "JS Calculator",
-            "description": "this project has created with HTML, CSS and Javascript",
-            "url": "https://sbarriosp.github.io/WebCalculatorJs/"
+            "cover": "/portfolio/To-Do app/to-do-list.jpg",
+            "title": "To Do app",
+            "description": "this project has created with Reactjs and its responsive",
+            "url": "https://sbarriosp.github.io/ToDo-list/"
         },
 
         {
