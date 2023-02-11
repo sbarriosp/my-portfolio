@@ -3,7 +3,7 @@ import Loader from "react-loaders";
 import "./index.scss";
 import AnimatedLetters from "../AnimatedLetters";
 import { useEffect, useState } from "react";
-import portfolioData from "../../data/portfolio.json";
+import portfolioData from "./data/portfolio.json";
 
 const Portfolio = () => {
 
@@ -20,19 +20,18 @@ const Portfolio = () => {
         }
     });  
 
-    const renderPortfolio = (Portfolio) => {
-        return(
+    const renderPortfolio = (portfolio) => {
+        return (
             <div className="images-container">
                 {
-                    Portfolio.map((port, idx) => {
+                    portfolio.map((port, idx) => {
                         return (
-                            <div className='image-box' key={idx}> 
-                                <img src={port.cover} className="portfolio-image" alt="portfolio"/>    {/*there you add the route of data- portfolio.json file and include the image */}
-                                <div className="content">
-                                    <p className="tittle"> {port.title} </p>
-                                    <h4 className="description"> {port.description}</h4>
-                                    <button className="btn" onClick={() => window.open (port.url)}>View</button>
-                                </div>
+                            <div className='image-box' key={idx}>  
+                                    <div className="content">
+                                        <p className="title"> {port.title}</p>
+                                        <h4 className="description"> {port.description}</h4>
+                                        <button className="btn" onClick={() => window.open(port.url)}>View</button>
+                                    </div>
                             </div>
                         )
                     } )

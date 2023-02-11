@@ -1,0 +1,24 @@
+{
+    "portfolio": [
+        {
+            "title": "E-Commerce",
+            "description": "This project was created with HTML, CSS and JS with a responsive design.",
+            "url": "https://sbarriosp.github.io/e-commerce-Frontend/"
+        },
+        {
+            "title": "To Do App",
+            "description": "This project was created with ReactJS and SCCS with a responsive design.",
+            "url": "https://sbarriosp.github.io/ToDo-list/"
+        },
+        {
+            "title": "Calculator App",
+            "description": "This project was created with HTML, CSS and JS with a responsive design.",
+            "url": "https://sbarriosp.github.io/WebCalculatorJs/"
+        },
+        {
+            "title": "Temperature App",
+            "description": "this project has created with HTML, CSS and JS as my first web project with SoloLearn.",
+            "url": "https://sbarriosp.github.io/TemperatureApp/"
+        }
+    ]
+}
