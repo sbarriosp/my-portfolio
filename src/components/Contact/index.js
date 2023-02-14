@@ -19,7 +19,7 @@ const Contact = () => {
         e.preventDefault()
     
         emailjs
-          .sendForm('service_mclcfro', 'template_z5bnf4s', refForm.current, 'A0ZJ5V9oJUP7Z6O7W')
+          .sendForm('service_mclcfro', 'template_z5bnf4s', refForm.current, 'token email.js')
           .then(
             () => {
               alert('Message successfully sent!')
